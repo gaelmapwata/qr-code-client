@@ -1,18 +1,16 @@
 <template>
-  <div class="contain-menu">
-    <v-container>
-      <v-row>
-        <v-col>
-          <v-img
-            :aspect-ratio="1"
-            src="~/assets/images/menu.webp"
-            height="390"
-            contain
-          />
-        </v-col>
-      </v-row>
-    </v-container>
-  </div>
+  <v-container class="main-container">
+    <v-row class="row-img">
+      <v-col>
+        <v-img
+          :aspect-ratio="1"
+          src="~/assets/images/menu.webp"
+          height="390"
+          contain
+        />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <script setup>
 definePageMeta({
@@ -20,7 +18,11 @@ definePageMeta({
 })
 </script>
 <style lang="scss">
-.contain-menu{
+.main-container{
+  height: 100vh;
   background-color: black;
+}
+.row-img{
+  margin-top: 100px !important;
 }
 </style>
